@@ -13,7 +13,7 @@ function renderTodolist(){
         <button onclick="
              todoList.splice(${i} , 1);
              renderTodolist(); 
-        " class="delete-todo-button">Delete</button>
+        " class="delete-todo-button">Complete</button>
         </div>` ;
         todoListHtml = todoListHtml + html;
     }
