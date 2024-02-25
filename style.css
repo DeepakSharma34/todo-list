@@ -163,7 +163,8 @@ body{
       }
 
       .delete-todo-button {
-        font-size: 1px;
+        font-size: 8px;
+        font-weight: bold;
       }
 
       .todolist-grid .data{
