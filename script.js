@@ -3,11 +3,11 @@ let todoList = JSON.parse(localStorage.getItem('todoList'));
 if(!todoList){
     todoList = [{
         name : 'make dinner',
-        dueDate : '2022-12-22'
+        dueDate : '2024-12-22'
     },
     {
         name: 'wash dishes',
-        dueDate : '2022-12-22'
+        dueDate : '2024-12-22'
     }
     ];
 }
