@@ -12,6 +12,11 @@ if(!todoList){
     ];
 }
 
+var x = document.getElementById("myAudio");
+function playAudio() {
+    x.play();
+}
+
 function saveToStorage() {
     localStorage.setItem('todoList' , JSON.stringify(todoList));
 }
@@ -27,8 +32,9 @@ function renderTodolist(){
         <div class="js-name"> Date : ${dueDate}</div>
         <button onclick="
              todoList.splice(${i} , 1);
-             renderTodolist(); 
-             saveTostorage();
+             playAudio(); 
+             renderTodolist();
+             saveToStorage();
         " class="delete-todo-button">Complete</button>
         </div>` ;
         todoListHtml = todoListHtml + html;
